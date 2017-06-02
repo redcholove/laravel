@@ -1,0 +1,88 @@
+.other-page-content {
+    display: none;
+    height: 92%;
+    overflow-x: scroll;
+    .nav-bar {
+        height: 8%;
+        background-color: $main-color;
+        width: 100%;
+        text-align: center;
+        .setting-button {
+            background-color: $main-color;
+            border: 1px solid $main-color;
+            height: 100%;
+            float: right;
+            vertical-align: middle;
+            width: 33.3%;
+            img {
+                height: 70%;
+                float: right;
+            }
+        }
+        .page-title {
+            background-color: $main-color;
+            border: 1px solid $main-color;
+            height: 100%;
+            width: 33.3%;
+            float: right;
+            color: white;
+            font-size: 1rem;
+        }
+    }
+    .user-profile {
+        text-align: center;
+        height: 40%;
+        width: 100%;
+        .profile-wallpaper {
+            width: 100%;
+            height: 70%;
+            position: relative;
+            input[type="file"] {
+                position: absolute;
+                opacity: 0;
+                height: 100%;
+                width: 100%;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .profile-headimg {
+            position: relative;
+            height: 35%;
+            z-index: 999;
+            margin-top: -15%;
+            input[type="file"] {
+                position: absolute;
+                opacity: 0;
+                height: 100%;
+                width: 100%;
+            }
+            img {
+                border: white 3px solid;
+                border-radius: 100px;
+                height: 100%;
+            }
+        }
+        .profile-name {
+            height: 10%;
+            width: 100%;
+            button {
+                background-color: white;
+                border: 1px solid white;
+                height: 100%;
+                margin-top: 5%;
+                font {
+                    color: $main-text;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
+                img {
+                    height: 60%;
+                }
+            }
+        }
+    }
+    ////last 58% height
+}

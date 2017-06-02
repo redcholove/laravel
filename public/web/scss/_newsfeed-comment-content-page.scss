@@ -1,0 +1,125 @@
+.newsfeed-comment-page-content {
+    height: 100%;
+    width: 100%;
+    display: none;
+    .nav-bar {
+        height: 8%;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid $hr;
+        .return-button {
+            width: 33.3%;
+            float: left;
+            height: 100%;
+            text-align: left;
+            button {
+                margin-top: 5%;
+                height: 80%;
+                width: 50%;
+                border-radius: 0.8rem;
+                border: 1px solid $input-type-border;
+                background-color: white;
+                margin-left: 2vw;
+            }
+        }
+        .page-title {
+            background-color: white;
+            border: 1px solid white;
+            float: left;
+            width: 33.3%;
+            height: 100%;
+            font-size: 1.2rem;
+        }
+    }
+    .all-single-newsfeed-comments {
+        width: 95%;
+        height: 86%;
+        margin-left: 2.5%;
+        overflow-y: scroll;
+        .single-comment-content {
+            height: 15%;
+            width: 100%;
+            line-height: 3vh;
+            border-bottom: 1px solid #BEBEBE;
+            padding-top: 2%;
+            .single-comment-top {
+                width: 100%;
+                height: 45%;
+                float: left;
+                .comment-profile {
+                    height: 100%;
+                    float: left;
+                }
+                .comment-UserId {
+                    color: #FF3399;
+                    font-size: 0.8rem;
+                }
+                button {
+                    background-color: white;
+                    border: 1px solid white;
+                    height: 50%;
+                    float: right;
+                    color: #FF3399;
+                    img {
+                        height: 100%;
+                    }
+                }
+                .comment-create-time {
+                    color: #8E8E8E;
+                    font-size: 0.8rem
+                }
+            }
+            .single-comment-bottom {
+                width: 100%;
+                height: 45%;
+                float: left;
+                margin-left: 6vh;
+                margin-top: 2%;
+                font {
+                    margin-top: 20%;
+                }
+            }
+        }
+    }
+    .comment-input {
+        position: fixed;
+        height: 6%;
+        width: 100%;
+        border-top: 1px solid $hr;
+        .file-choose {
+            background-color: white;
+            border: 1px solid white;
+            float: left; 
+            height: 100%; 
+            width: 15%;
+            img {
+                height: 90%;
+            }
+        }
+        .text-area-content {
+            height: 100%;
+            width: 70%; 
+            text-align: center; 
+            float: left;
+            input[type="textarea"] {
+                float: left; 
+                width: 100%; 
+                border: 1px solid grey; 
+                height: 75%; 
+                margin-top: 1%;
+            }
+        }
+        .button-to-comment {
+            float: left; 
+            width: 15%; 
+            height: 100%;
+            background-color: white;
+            border: 1px solid white;
+            font {
+                font-size: 0.8rem; 
+                color: #6C6C6C;
+            }
+        }
+    }
+}

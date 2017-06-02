@@ -1,0 +1,128 @@
+.single-newsfeed-page-content {
+    height: 92%;
+    width: 100%;
+    display: none;
+    .nav-bar {
+        height: 8%;
+        background-color: $main-color;
+        width: 100%;
+        text-align: center;
+        .return-button {
+            width: 15%;
+            float: left;
+            height: 5vh;
+            margin-top: 1.5vh;
+            img {
+                height: 100%;
+            }
+        }
+        #search-bar {
+            float: left;
+            width: 70%;
+            border: 1px solid $search-bar-color;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 1.5vh;
+            height: 5vh;
+            font-size: 1rem;
+            color: white;
+            background-color: $search-bar-color;
+        }
+    }
+    .all-content {
+        height: 92%;
+        margin-top: 2%;
+        width: 100%;
+        overflow-y: scroll;
+        .single-newsfeed-content {
+            width: 100%;
+            .post-img {
+                width: 95%;
+                margin-top: 2vh; 
+                margin-left: 2.5%;
+            }
+            .channel-profile-content {
+                width: 100%;
+                img {
+                    width: 12%;
+                    float: left;
+                    margin-left: 2.5%;
+                }
+                .channel-name {
+                    font-size: 0.8rem;
+                }
+                .create-time {
+                    font-size: 0.8rem; 
+                    color: $grey-text;
+                }
+            }
+            .text-content {
+                margin-left: 2.5%; 
+                width: 95%; 
+                font {
+                    font-size: 0.8rem;
+                }
+                .keep-reading {
+                    color: $main-text;
+                }
+                .client-button { 
+                    height: 5vh; 
+                    border-top: 1px solid $hr;
+                    border-bottom: 1px solid $hr;
+                    button {
+                        float: left; 
+                        width: 33.3%;
+                        img {
+                            height: 3vh;
+                        }
+                    }
+                }
+            }
+        }
+        .all-single-newsfeed-comments {
+            width: 95%; 
+            margin-left: 2.5%;
+            .single-comment-content {
+                height: 13vh; 
+                width: 100%; 
+                line-height: 3vh; 
+                border-bottom: 1px solid #BEBEBE;
+                .single-comment-top {
+                    width: 100%; 
+                    height: 48%; 
+                    float: left; 
+                    .comment-profile {
+                        height: 100%; 
+                        float: left;
+                    }
+                    .comment-UserId {
+                        color: #FF3399; 
+                        font-size: 0.8rem;
+                    }
+                    button {
+                        height: 50%; 
+                        float: right; 
+                        color: #FF3399;
+                        img {
+                            height: 100%;
+                        }
+                    }
+                    .comment-create-time {
+                        color: #8E8E8E; 
+                        font-size: 0.8rem
+                    }
+                }
+                .single-comment-bottom {
+                    width: 100%; 
+                    height: 48%; 
+                    float: left; 
+                    margin-left: 6vh; 
+                    margin-top: 2%;
+                    font {
+                        margin-top: 20%;
+                    }
+                }
+            }
+        }
+    }
+}

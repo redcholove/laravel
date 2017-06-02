@@ -1,0 +1,72 @@
+.bell-page-content{
+    display: none;
+    height: 92%;
+    overflow-x: scroll;
+    .nav-bar {
+        height: 8%;
+        background-color: $main-color;
+        width: 100%;
+        text-align: center;
+         button {
+            background-color: $main-color;
+            border: 1px solid $main-color;
+            height: 100%;
+            color: white;
+            font-size: 1rem;
+        }
+    }
+    .bell-list {
+        height: 92%;
+        overflow-y: scroll;
+        width: 100%;
+        .single-bell-content {
+            height: 8vh; 
+            width: 100%; 
+            border-bottom: 1px solid $hr; 
+            line-height: 8vh;
+            background-color: $yet-read-background;
+            img {
+                height: 6vh; 
+                margin-left: 3%; 
+                vertical-align: middle; 
+                margin-top: 1vh; 
+                float: left;
+            }
+            .user-id {
+                color: $main-text; 
+                margin-left: 2vw; 
+                font-weight: bold;
+                float: left;
+            }
+            .bell-content-text {
+                color: $grey-text;
+                margin-left: 2vw;
+                font-size: 0.5rem;
+                float: left;
+            }
+            .button-cancel {
+                font-size: 0.5rem;
+                float:right; 
+                margin-top: 1.5vh; 
+                height: 5vh; 
+                border-radius: 1rem; 
+                background-color: white;
+                width: 15vw; 
+                border: 1px solid $input-type-border; 
+                color:$grey-text; 
+                margin-right: 2vw;
+            }
+            .button-confirm {
+                float:right; 
+                margin-top: 1.5vh; 
+                height: 5vh; 
+                border-radius: 1rem; 
+                background-color: $main-text; 
+                width: 15vw; 
+                border: 1px solid $main-text; 
+                color:white; 
+                margin-right: 2vw;
+            }
+        }
+    }
+}

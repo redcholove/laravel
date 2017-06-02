@@ -1,0 +1,38 @@
+.bottom-bar {
+    z-index: 99;
+    display: none;
+    height: 8vh;
+    width: 100%;
+    border-top: 1px solid $hr;
+    position: fixed;
+    background-color: white;
+    button {
+        border: white 1px solid;
+        float: left;
+        width: 20%;
+        height: 100%;
+        background-color: white;
+        img {
+            height: 60%;
+        }
+        span.num {
+            background-color: red;
+            background-image: -webkit-linear-gradient(top, red, red);
+            /* Chrome 10+, Saf5.1+, iOS 5+ */
+            background-image: -moz-linear-gradient(top, red, red);
+            /* FF3.6+ */
+            background-image: -ms-linear-gradient(top, red, red);
+            /* IE10 */
+            background-image: -o-linear-gradient(top, red, red);
+            /* Opera 11.10+ */
+            color: #fff;
+            font-family: Verdana;
+            font-weight: normal;
+            border: 3px solid red;
+            border-radius: 15px;
+            position: absolute;
+            margin-top: -1%;
+            margin-left: -1%;
+        }
+    }
+}

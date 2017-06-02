@@ -1,0 +1,59 @@
+.class-schedule-page-content {
+    display: none;
+    height: 92%;
+//    overflow-x: scroll;
+    .nav-bar {
+        height: 8%;
+        background-color: $main-color;
+        width: 100%;
+        text-align: center;
+         button {
+            background-color: $main-color;
+            border: 1px solid $main-color;
+            height: 100%;
+            color: white;
+            font-size: 1rem;
+        }
+    }
+    .content {
+        height: 92%;
+        width: 100%;
+        overflow-y: scroll;
+        .single-class {
+            padding-left: 5vw;
+            width: 100vw;
+            height: 10vh;
+            border-bottom: $hr 1px solid;
+            .top {
+                height: 50%;
+                width: 100%;
+                float: left;
+                line-height: 5vh;
+                .className {
+                    color: $main-text;
+                    font-size: 1em;
+                }
+                .score {
+                    float: right;
+                    color: $grey-text;
+                    margin-right: 7vw;
+                }
+            }
+            .bottom {
+                height: 50%;
+                width: 100%;
+                float: left;
+                line-height: 5vh;
+                .classroom {
+                    float: left;
+                    color: black;
+                }
+                .classtime {
+                    float: left;
+                    margin-left: 3vw;
+                    color: $grey-text;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,151 @@
+.letter-page-content {
+    display: none;
+    height: 100%;
+    overflow-x: scroll;
+    text-align: center;
+    .nav-bar {
+        height: 8%;
+        background-color: $main-color;
+        width: 100%;
+        .return {
+            background-color: $main-color;
+            border: 1px solid $main-color;
+            height: 100%;
+            color: white;
+            width: 33.3%;
+            float: left;
+            font-size: 0.8em;
+            text-align: left;
+        }
+        button {
+            background-color: $main-color;
+            border: 1px solid $main-color;
+            height: 100%;
+            color: white;
+            float: left;
+            width: 33.3%;
+            font-size: 1rem;
+        }
+    }
+    .No-Content {
+        height: 84%;
+        width: 100%;
+        margin-top: 5%;
+        color: grey;
+        font-size: 1em;
+    }
+    .talk-content {
+        height: 86%;
+        width: 100%;
+        background-color: #F0F0F0;
+        overflow-y: scroll;
+        .other-talk {
+            float: left;
+            text-align: left;
+            width: 100%;
+            background-color: white;
+            margin-bottom: 3%;
+            height: 20vw;
+            .profile {
+                float: left;
+                height: 12vw;
+                vertical-align: left;
+                width: 100%;
+                line-height: 12vw;
+                img {
+                    height: 12vw;
+                    border-radius: 100px;
+                    width: 12vw;
+                    float: left;
+                    margin-left: 4%;
+                    vertical-align: middle;
+                }
+                font {
+                    float: left;
+                    font-size: 0.6em;
+                    margin-left: 2vw;
+                }
+                .time {
+                    float: right;
+                    font-size: 0.6em;
+                    color: $grey-text;
+                    margin-right: 2vw;
+                }
+            }
+            .content {
+                float: left;
+                height: 8vw;
+                width: 100%;
+                font {
+                    float: left;
+                    margin-left: 20vw;
+                }
+            }
+        }
+        .my-talk {
+            text-align: right;
+            height: 20vw;
+            float: right;
+            width: 100%;
+            background-color: white;
+            margin-bottom: 3%;
+            .profile {
+                float: right;
+                height: 12vw;
+                vertical-align: right;
+                width: 100%;
+                line-height: 12vw;
+                img {
+                    vertical-align: middle;
+                    width: 12vw;
+                    float: right;
+                    margin-right: 4%;
+                    height: 12vw;
+                    border-radius: 100px;
+                }
+                font {
+                    float: right;
+                    font-size: 0.6em;
+                    margin-right: 2vw;
+                }
+                .time {
+                    float: left;
+                    font-size: 0.6em;
+                    color: $grey-text;
+                    margin-left: 2vw;
+                }
+            }
+            .content {
+                float: right;
+                height: 8vw;
+                width: 100%;
+                line-height: 8vw;
+                font {
+                    font-size: 1em;
+                    font-weight: 600;
+                    float: left;
+                    margin-left: 14vw;
+                }
+            }
+        }
+    }
+    .input-content {
+        height: 5%;
+        width: 100%;
+        bottom: 0px;
+        z-index: 1000;
+        input[type="textarea"] {
+            width: 80%;
+            height: 95%;
+            float: left;
+            border: grey 1px solid;
+            font-size: 1em;
+        }
+        button {
+            width: 15%;
+            height: 100%;
+            background-color: white;
+            border: 1px solid grey;
+        }
+    }
+}

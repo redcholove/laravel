@@ -1,0 +1,42 @@
+/* line 1, /Users/red/Desktop/red_design/code/scss/_login-content-page.scss */
+.login-page-content {
+  height: 100vh;
+  width: 100%;
+  text-align: center; }
+  /* line 6, /Users/red/Desktop/red_design/code/scss/_login-content-page.scss */
+  .login-page-content #account-input {
+    width: 75%;
+    padding: 0.6rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 50vh; }
+  /* line 15, /Users/red/Desktop/red_design/code/scss/_login-content-page.scss */
+  .login-page-content #password-input {
+    width: 75%;
+    padding: 0.6rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 1vh; }
+  /* line 24, /Users/red/Desktop/red_design/code/scss/_login-content-page.scss */
+  .login-page-content #login-botton {
+    width: 75%;
+    margin-top: 1vh;
+    background-color: #FF359A;
+    border: none;
+    color: white;
+    padding: 10px 5px;
+    font-size: 0.9rem; }
+  /* line 33, /Users/red/Desktop/red_design/code/scss/_login-content-page.scss */
+  .login-page-content #go-register-botton {
+    margin-top: 2vh;
+    width: 75%;
+    background-color: #FF60AF;
+    border: none;
+    color: white;
+    font-size: 0.9rem; }
+
+/*# sourceMappingURL=_login-content-page.css.map */

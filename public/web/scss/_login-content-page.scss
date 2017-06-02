@@ -1,0 +1,41 @@
+.login-page-content {
+    height: 100vh;
+    width: 100%;
+    //background-color: blue;
+    text-align: center;
+    #account-input {
+        width: 75%;
+        padding: 0.6rem;
+        display: inline-block;
+        border: 1px solid $input-type-border;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 50vh;
+    }
+    #password-input {
+        width: 75%;
+        padding: 0.6rem;
+        display: inline-block;
+        border: 1px solid $input-type-border;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 1vh;
+    }
+    #login-botton {
+        width: 75%;
+        margin-top: 1vh;
+        background-color: $second-color;
+        border: none;
+        color: white;
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+    #go-register-botton {
+        margin-top: 2vh;
+        width: 75%;
+        background-color: $main-color;
+        border: none;
+        color: white;
+        font-size: 0.9rem;
+    }
+}

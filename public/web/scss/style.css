@@ -1,0 +1,1467 @@
+.login-page-content {
+  height: 100vh;
+  width: 100%;
+  text-align: center; }
+  .login-page-content #account-input {
+    width: 75%;
+    padding: 0.6rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 50vh; }
+  .login-page-content #password-input {
+    width: 75%;
+    padding: 0.6rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 1vh; }
+  .login-page-content #login-botton {
+    width: 75%;
+    margin-top: 1vh;
+    background-color: #FF359A;
+    border: none;
+    color: white;
+    padding: 10px 5px;
+    font-size: 0.9rem; }
+  .login-page-content #go-register-botton {
+    margin-top: 2vh;
+    width: 75%;
+    background-color: #FF60AF;
+    border: none;
+    color: white;
+    font-size: 0.9rem; }
+
+.register-page-content {
+  display: none;
+  text-align: center; }
+  .register-page-content #phone-register {
+    width: 75%;
+    padding: 0.6rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 50vh; }
+  .register-page-content #account-register {
+    width: 75%;
+    padding: 0.6rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 1vh; }
+  .register-page-content #password-register {
+    width: 75%;
+    padding: 0.6rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 1vh; }
+  .register-page-content #register-botton {
+    width: 75%;
+    margin-top: 1vh;
+    background-color: #FF359A;
+    border: none;
+    color: white;
+    padding: 10px 5px;
+    font-size: 0.9rem; }
+  .register-page-content #go-login-botton {
+    margin-top: 2vh;
+    width: 75%;
+    background-color: #FF60AF;
+    border: none;
+    color: white;
+    font-size: 0.9rem; }
+
+.newsfeed-page-content {
+  height: 92%;
+  width: 100%;
+  display: none; }
+  .newsfeed-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%; }
+    .newsfeed-page-content .nav-bar .forumtype {
+      float: left;
+      width: 15%;
+      color: white;
+      font-size: 1.5em;
+      height: 100%;
+      text-align: center;
+      padding-top: 2%; }
+    .newsfeed-page-content .nav-bar .friendlist {
+      width: 15%;
+      height: 100%;
+      float: left; }
+      .newsfeed-page-content .nav-bar .friendlist img {
+        margin-top: 15%;
+        height: 70%; }
+    .newsfeed-page-content .nav-bar .search {
+      width: 70%;
+      height: 100%;
+      float: left;
+      text-align: center; }
+    .newsfeed-page-content .nav-bar #search-bar {
+      margin-top: 1.2vh;
+      width: 90%;
+      border: 1px solid #D9006C;
+      border-radius: 4px;
+      box-sizing: border-box;
+      height: 5vh;
+      font-size: 1rem;
+      color: white;
+      background-color: #D9006C; }
+  .newsfeed-page-content .newsfeed-btn-group {
+    margin-top: 2%;
+    height: 5%;
+    border-bottom: 1px solid #ccc; }
+    .newsfeed-page-content .newsfeed-btn-group #forum-name {
+      background-color: white;
+      border: white 1px solid;
+      float: left;
+      height: 100%;
+      font-size: 1rem;
+      color: #8E8E8E; }
+    .newsfeed-page-content .newsfeed-btn-group #newsfeed-btn-newest {
+      float: right;
+      background-color: white;
+      height: 100%;
+      border: 1px solid white;
+      width: 15vw;
+      font-size: 1rem;
+      color: #8E8E8E; }
+    .newsfeed-page-content .newsfeed-btn-group #newsfeed-btn-hottest {
+      float: right;
+      background-color: white;
+      height: 100%;
+      border: 1px solid white;
+      width: 15vw;
+      font-size: 1rem;
+      color: #8E8E8E; }
+  .newsfeed-page-content .all-newsfeed-content {
+    overflow-y: scroll;
+    height: 85%;
+    width: 100%;
+    padding-top: 5%; }
+    .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content {
+      width: 100%;
+      margin-bottom: 5vh; }
+      .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .post-img {
+        width: 95%;
+        margin-top: 2vh;
+        margin-left: 2.5%; }
+      .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .post-video {
+        width: 95%;
+        margin-top: 2vh;
+        margin-left: 2.5%; }
+      .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .channel-profile-content {
+        width: 100%; }
+        .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .channel-profile-content img {
+          width: 12%;
+          float: left;
+          margin-left: 2.5%;
+          border-radius: 10em; }
+        .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .channel-profile-content .channel-name {
+          font-size: 0.8rem; }
+        .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .channel-profile-content .create-time {
+          font-size: 0.8rem;
+          color: #8E8E8E; }
+        .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .channel-profile-content .post-by-self {
+          float: right;
+          margin-right: 4vw; }
+          .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .channel-profile-content .post-by-self img {
+            float: right;
+            height: 20px;
+            width: 20px; }
+        .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .channel-profile-content .dropdown-content {
+          display: none;
+          background-color: #f9f9f9;
+          width: 100%;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1; }
+          .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .channel-profile-content .dropdown-content button {
+            color: black;
+            height: 8vh;
+            background-color: white;
+            border: 1px solid white;
+            width: 100%;
+            line-height: 8vh;
+            text-decoration: none;
+            display: block; }
+          .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .channel-profile-content .dropdown-content .cancel {
+            color: red; }
+      .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .text-content {
+        margin-left: 2.5%;
+        width: 95%; }
+        .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .text-content font {
+          font-size: 0.8rem; }
+        .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .text-content .keep-reading {
+          background-color: white;
+          border: 1px solid white;
+          color: #FF3399; }
+        .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .text-content hr {
+          width: 95vw;
+          color: #BEBEBE; }
+        .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .text-content .client-button {
+          height: 5vh; }
+          .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .text-content .client-button button {
+            background-color: white;
+            float: left;
+            border: white 1px solid;
+            width: 33.3%; }
+            .newsfeed-page-content .all-newsfeed-content .single-newsfeed-content .text-content .client-button button img {
+              height: 3vh; }
+
+.bottom-bar {
+  z-index: 99;
+  display: none;
+  height: 8vh;
+  width: 100%;
+  border-top: 1px solid #BEBEBE;
+  position: fixed;
+  background-color: white; }
+  .bottom-bar button {
+    border: white 1px solid;
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: white; }
+    .bottom-bar button img {
+      height: 60%; }
+    .bottom-bar button span.num {
+      background-color: red;
+      background-image: -webkit-linear-gradient(top, red, red);
+      /* Chrome 10+, Saf5.1+, iOS 5+ */
+      background-image: -moz-linear-gradient(top, red, red);
+      /* FF3.6+ */
+      background-image: -ms-linear-gradient(top, red, red);
+      /* IE10 */
+      background-image: -o-linear-gradient(top, red, red);
+      /* Opera 11.10+ */
+      color: #fff;
+      font-family: Verdana;
+      font-weight: normal;
+      border: 3px solid red;
+      border-radius: 15px;
+      position: absolute;
+      margin-top: -1%;
+      margin-left: -1%; }
+
+.post-page-content {
+  height: 100%;
+  width: 100%;
+  display: none; }
+  .post-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%;
+    line-height: 8vh;
+    color: white; }
+    .post-page-content .nav-bar .return-button {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      float: left;
+      width: 33.3%;
+      color: white;
+      height: 100%;
+      text-align: left; }
+    .post-page-content .nav-bar .page-title {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      float: left;
+      width: 33.3%;
+      color: white;
+      height: 100%;
+      text-align: center;
+      font-size: 1rem; }
+    .post-page-content .nav-bar .post-button {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      float: left;
+      width: 33.3%;
+      color: white;
+      height: 100%;
+      font-size: 0.8rem;
+      text-align: right; }
+  .post-page-content .choose-post-channel {
+    margin-top: 3%;
+    width: 94%;
+    height: 8%;
+    padding-left: 3%; }
+    .post-page-content .choose-post-channel .channel-img {
+      float: left;
+      height: 100%; }
+      .post-page-content .choose-post-channel .channel-img img {
+        height: 100%;
+        float: left;
+        margin-left: 4%; }
+    .post-page-content .choose-post-channel .channel-profile {
+      float: left;
+      height: 100%;
+      padding-left: 4vw; }
+      .post-page-content .choose-post-channel .channel-profile .channel-name {
+        float: left;
+        width: 100%;
+        height: 50%; }
+        .post-page-content .choose-post-channel .channel-profile .channel-name font {
+          color: #FF3399;
+          font-weight: bold; }
+      .post-page-content .choose-post-channel .channel-profile .choose-others-channel {
+        float: left;
+        width: 100%;
+        height: 50%; }
+        .post-page-content .choose-post-channel .channel-profile .choose-others-channel font {
+          color: #BEBEBE;
+          font-size: 0.6rem; }
+  .post-page-content .dropdown-content {
+    display: none;
+    position: absolute;
+    height: 20%;
+    width: 94%;
+    z-index: 1;
+    margin-left: 3%;
+    overflow-y: scroll; }
+    .post-page-content .dropdown-content button {
+      height: 33.3%;
+      width: 100%;
+      background-color: white;
+      border: 1px solid white;
+      text-align: left;
+      display: block; }
+      .post-page-content .dropdown-content button img {
+        height: 100%;
+        vertical-align: middle; }
+      .post-page-content .dropdown-content button font {
+        color: #FF3399;
+        margin-left: 3%; }
+  .post-page-content .text-content {
+    margin-top: 5%;
+    margin-left: 3%;
+    height: 73%;
+    width: 94%;
+    overflow-y: scroll; }
+    .post-page-content .text-content textarea {
+      height: 80%;
+      width: 100%; }
+    .post-page-content .text-content .demo-chooose-img {
+      width: 100%;
+      display: none; }
+    .post-page-content .text-content .demo-choose-video {
+      width: 100%;
+      display: none; }
+  .post-page-content .file-tag {
+    bottom: 0px;
+    border-top: 1px solid #BEBEBE;
+    background-color: white;
+    height: 6%; }
+    .post-page-content .file-tag button {
+      background-color: white;
+      border: 1px solid white;
+      position: relative;
+      width: 40%;
+      height: 100%;
+      float: left;
+      text-align: left; }
+      .post-page-content .file-tag button input[type="file"] {
+        position: absolute;
+        opacity: 0;
+        height: 100%;
+        width: 100%; }
+      .post-page-content .file-tag button img {
+        height: 100%;
+        vertical-align: middle; }
+
+.channel-profile-page-content {
+  display: none;
+  height: 92%;
+  overflow-x: scroll; }
+  .channel-profile-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%;
+    text-align: center; }
+    .channel-profile-page-content .nav-bar button {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      height: 100%;
+      float: left;
+      width: 33.3%;
+      color: white;
+      font-size: 1rem; }
+      .channel-profile-page-content .nav-bar button img {
+        height: 60%;
+        float: left; }
+      .channel-profile-page-content .nav-bar button .img-setting {
+        height: 60%;
+        float: right; }
+  .channel-profile-page-content .channel-profile {
+    text-align: center;
+    width: 100%;
+    height: 70%; }
+    .channel-profile-page-content .channel-profile .wall-paper {
+      width: 100%; }
+    .channel-profile-page-content .channel-profile .profile-img {
+      width: 25%;
+      margin-top: -15%;
+      border-radius: 100%;
+      border: 1px solid white; }
+    .channel-profile-page-content .channel-profile .channel-name {
+      color: #FF3399;
+      font-size: 1rem;
+      font-weight: bold; }
+    .channel-profile-page-content .channel-profile .follow-button {
+      background-color: #FF0099;
+      border: 1px solid #FF0099;
+      color: white;
+      width: 60%;
+      height: 5vh; }
+    .channel-profile-page-content .channel-profile .follow-and-post {
+      width: 60%;
+      margin-left: 20%;
+      margin-top: 2vh;
+      color: #8E8E8E;
+      height: 4vh; }
+      .channel-profile-page-content .channel-profile .follow-and-post span {
+        width: 50%;
+        float: left;
+        font-size: 0.8rem; }
+    .channel-profile-page-content .channel-profile .channel-newsfeed-or-img {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      height: 4vh;
+      margin-top: 2vh; }
+      .channel-profile-page-content .channel-profile .channel-newsfeed-or-img .button-left {
+        background-color: white;
+        border: 1px solid white;
+        float: left;
+        width: 20%;
+        height: 100%;
+        font-size: 0.9rem;
+        margin-left: 20%; }
+      .channel-profile-page-content .channel-profile .channel-newsfeed-or-img .button-right {
+        background-color: white;
+        border: 1px solid white;
+        float: left;
+        width: 20%;
+        height: 100%;
+        font-size: 0.9rem; }
+  .channel-profile-page-content .channel-newsfeed-or-img {
+    width: 100%;
+    padding-left: 0.5%; }
+    .channel-profile-page-content .channel-newsfeed-or-img img {
+      width: 32%; }
+  .channel-profile-page-content .unopen-title {
+    display: none;
+    margin-top: 10%;
+    text-align: center; }
+
+.friends-page-content {
+  display: none;
+  height: 92%;
+  overflow-x: scroll; }
+  .friends-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%; }
+    .friends-page-content .nav-bar button {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      margin-left: 20%;
+      height: 100%;
+      color: white;
+      font-size: 0.6em; }
+    .friends-page-content .nav-bar .friend-icon {
+      float: right;
+      height: 100%; }
+      .friends-page-content .nav-bar .friend-icon img {
+        height: 90%;
+        margin-top: 10%; }
+  .friends-page-content .content {
+    text-align: center;
+    height: 92%;
+    width: 100%; }
+    .friends-page-content .content .wallpaper {
+      width: 100%; }
+      .friends-page-content .content .wallpaper img {
+        width: 100%; }
+    .friends-page-content .content .couple-icon {
+      height: 25%;
+      margin-top: -20%;
+      text-align: center; }
+      .friends-page-content .content .couple-icon img {
+        height: 100%; }
+    .friends-page-content .content p {
+      font-size: 1em;
+      color: #8E8E8E; }
+    .friends-page-content .content button {
+      margin-top: 10%;
+      padding: 1em;
+      border: #D9006C;
+      border-radius: 0.8em;
+      background-color: #FF60AF;
+      color: white;
+      font-size: 0.6em; }
+
+.bell-page-content {
+  display: none;
+  height: 92%;
+  overflow-x: scroll; }
+  .bell-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%;
+    text-align: center; }
+    .bell-page-content .nav-bar button {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      height: 100%;
+      color: white;
+      font-size: 1rem; }
+  .bell-page-content .bell-list {
+    height: 92%;
+    overflow-y: scroll;
+    width: 100%; }
+    .bell-page-content .bell-list .single-bell-content {
+      height: 8vh;
+      width: 100%;
+      border-bottom: 1px solid #BEBEBE;
+      line-height: 8vh;
+      background-color: #FCFCFC; }
+      .bell-page-content .bell-list .single-bell-content img {
+        height: 6vh;
+        margin-left: 3%;
+        vertical-align: middle;
+        margin-top: 1vh;
+        float: left; }
+      .bell-page-content .bell-list .single-bell-content .user-id {
+        color: #FF3399;
+        margin-left: 2vw;
+        font-weight: bold;
+        float: left; }
+      .bell-page-content .bell-list .single-bell-content .bell-content-text {
+        color: #8E8E8E;
+        margin-left: 2vw;
+        font-size: 0.5rem;
+        float: left; }
+      .bell-page-content .bell-list .single-bell-content .button-cancel {
+        font-size: 0.5rem;
+        float: right;
+        margin-top: 1.5vh;
+        height: 5vh;
+        border-radius: 1rem;
+        background-color: white;
+        width: 15vw;
+        border: 1px solid #ccc;
+        color: #8E8E8E;
+        margin-right: 2vw; }
+      .bell-page-content .bell-list .single-bell-content .button-confirm {
+        float: right;
+        margin-top: 1.5vh;
+        height: 5vh;
+        border-radius: 1rem;
+        background-color: #FF3399;
+        width: 15vw;
+        border: 1px solid #FF3399;
+        color: white;
+        margin-right: 2vw; }
+
+.other-page-content {
+  display: none;
+  height: 92%;
+  overflow-x: scroll; }
+  .other-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%;
+    text-align: center; }
+    .other-page-content .nav-bar .setting-button {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      height: 100%;
+      float: right;
+      vertical-align: middle;
+      width: 33.3%; }
+      .other-page-content .nav-bar .setting-button img {
+        height: 70%;
+        float: right; }
+    .other-page-content .nav-bar .page-title {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      height: 100%;
+      width: 33.3%;
+      float: right;
+      color: white;
+      font-size: 1rem; }
+  .other-page-content .user-profile {
+    text-align: center;
+    height: 40%;
+    width: 100%; }
+    .other-page-content .user-profile .profile-wallpaper {
+      width: 100%;
+      height: 70%;
+      position: relative; }
+      .other-page-content .user-profile .profile-wallpaper input[type="file"] {
+        position: absolute;
+        opacity: 0;
+        height: 100%;
+        width: 100%; }
+      .other-page-content .user-profile .profile-wallpaper img {
+        height: 100%;
+        width: 100%; }
+    .other-page-content .user-profile .profile-headimg {
+      position: relative;
+      height: 35%;
+      z-index: 999;
+      margin-top: -15%; }
+      .other-page-content .user-profile .profile-headimg input[type="file"] {
+        position: absolute;
+        opacity: 0;
+        height: 100%;
+        width: 100%; }
+      .other-page-content .user-profile .profile-headimg img {
+        border: white 3px solid;
+        border-radius: 100px;
+        height: 100%; }
+    .other-page-content .user-profile .profile-name {
+      height: 10%;
+      width: 100%; }
+      .other-page-content .user-profile .profile-name button {
+        background-color: white;
+        border: 1px solid white;
+        height: 100%;
+        margin-top: 5%; }
+        .other-page-content .user-profile .profile-name button font {
+          color: #FF3399;
+          font-weight: bold;
+          font-size: 1.2rem; }
+        .other-page-content .user-profile .profile-name button img {
+          height: 60%; }
+
+.single-newsfeed-page-content {
+  height: 92%;
+  width: 100%;
+  display: none; }
+  .single-newsfeed-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%;
+    text-align: center; }
+    .single-newsfeed-page-content .nav-bar .return-button {
+      width: 15%;
+      float: left;
+      height: 5vh;
+      margin-top: 1.5vh; }
+      .single-newsfeed-page-content .nav-bar .return-button img {
+        height: 100%; }
+    .single-newsfeed-page-content .nav-bar #search-bar {
+      float: left;
+      width: 70%;
+      border: 1px solid #D9006C;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 1.5vh;
+      height: 5vh;
+      font-size: 1rem;
+      color: white;
+      background-color: #D9006C; }
+  .single-newsfeed-page-content .all-content {
+    height: 92%;
+    margin-top: 2%;
+    width: 100%;
+    overflow-y: scroll; }
+    .single-newsfeed-page-content .all-content .single-newsfeed-content {
+      width: 100%; }
+      .single-newsfeed-page-content .all-content .single-newsfeed-content .post-img {
+        width: 95%;
+        margin-top: 2vh;
+        margin-left: 2.5%; }
+      .single-newsfeed-page-content .all-content .single-newsfeed-content .channel-profile-content {
+        width: 100%; }
+        .single-newsfeed-page-content .all-content .single-newsfeed-content .channel-profile-content img {
+          width: 12%;
+          float: left;
+          margin-left: 2.5%; }
+        .single-newsfeed-page-content .all-content .single-newsfeed-content .channel-profile-content .channel-name {
+          font-size: 0.8rem; }
+        .single-newsfeed-page-content .all-content .single-newsfeed-content .channel-profile-content .create-time {
+          font-size: 0.8rem;
+          color: #8E8E8E; }
+      .single-newsfeed-page-content .all-content .single-newsfeed-content .text-content {
+        margin-left: 2.5%;
+        width: 95%; }
+        .single-newsfeed-page-content .all-content .single-newsfeed-content .text-content font {
+          font-size: 0.8rem; }
+        .single-newsfeed-page-content .all-content .single-newsfeed-content .text-content .keep-reading {
+          color: #FF3399; }
+        .single-newsfeed-page-content .all-content .single-newsfeed-content .text-content .client-button {
+          height: 5vh;
+          border-top: 1px solid #BEBEBE;
+          border-bottom: 1px solid #BEBEBE; }
+          .single-newsfeed-page-content .all-content .single-newsfeed-content .text-content .client-button button {
+            float: left;
+            width: 33.3%; }
+            .single-newsfeed-page-content .all-content .single-newsfeed-content .text-content .client-button button img {
+              height: 3vh; }
+    .single-newsfeed-page-content .all-content .all-single-newsfeed-comments {
+      width: 95%;
+      margin-left: 2.5%; }
+      .single-newsfeed-page-content .all-content .all-single-newsfeed-comments .single-comment-content {
+        height: 13vh;
+        width: 100%;
+        line-height: 3vh;
+        border-bottom: 1px solid #BEBEBE; }
+        .single-newsfeed-page-content .all-content .all-single-newsfeed-comments .single-comment-content .single-comment-top {
+          width: 100%;
+          height: 48%;
+          float: left; }
+          .single-newsfeed-page-content .all-content .all-single-newsfeed-comments .single-comment-content .single-comment-top .comment-profile {
+            height: 100%;
+            float: left; }
+          .single-newsfeed-page-content .all-content .all-single-newsfeed-comments .single-comment-content .single-comment-top .comment-UserId {
+            color: #FF3399;
+            font-size: 0.8rem; }
+          .single-newsfeed-page-content .all-content .all-single-newsfeed-comments .single-comment-content .single-comment-top button {
+            height: 50%;
+            float: right;
+            color: #FF3399; }
+            .single-newsfeed-page-content .all-content .all-single-newsfeed-comments .single-comment-content .single-comment-top button img {
+              height: 100%; }
+          .single-newsfeed-page-content .all-content .all-single-newsfeed-comments .single-comment-content .single-comment-top .comment-create-time {
+            color: #8E8E8E;
+            font-size: 0.8rem; }
+        .single-newsfeed-page-content .all-content .all-single-newsfeed-comments .single-comment-content .single-comment-bottom {
+          width: 100%;
+          height: 48%;
+          float: left;
+          margin-left: 6vh;
+          margin-top: 2%; }
+          .single-newsfeed-page-content .all-content .all-single-newsfeed-comments .single-comment-content .single-comment-bottom font {
+            margin-top: 20%; }
+
+.newsfeed-comment-page-content {
+  height: 100%;
+  width: 100%;
+  display: none; }
+  .newsfeed-comment-page-content .nav-bar {
+    height: 8%;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #BEBEBE; }
+    .newsfeed-comment-page-content .nav-bar .return-button {
+      width: 33.3%;
+      float: left;
+      height: 100%;
+      text-align: left; }
+      .newsfeed-comment-page-content .nav-bar .return-button button {
+        margin-top: 5%;
+        height: 80%;
+        width: 50%;
+        border-radius: 0.8rem;
+        border: 1px solid #ccc;
+        background-color: white;
+        margin-left: 2vw; }
+    .newsfeed-comment-page-content .nav-bar .page-title {
+      background-color: white;
+      border: 1px solid white;
+      float: left;
+      width: 33.3%;
+      height: 100%;
+      font-size: 1.2rem; }
+  .newsfeed-comment-page-content .all-single-newsfeed-comments {
+    width: 95%;
+    height: 86%;
+    margin-left: 2.5%;
+    overflow-y: scroll; }
+    .newsfeed-comment-page-content .all-single-newsfeed-comments .single-comment-content {
+      height: 15%;
+      width: 100%;
+      line-height: 3vh;
+      border-bottom: 1px solid #BEBEBE;
+      padding-top: 2%; }
+      .newsfeed-comment-page-content .all-single-newsfeed-comments .single-comment-content .single-comment-top {
+        width: 100%;
+        height: 45%;
+        float: left; }
+        .newsfeed-comment-page-content .all-single-newsfeed-comments .single-comment-content .single-comment-top .comment-profile {
+          height: 100%;
+          float: left; }
+        .newsfeed-comment-page-content .all-single-newsfeed-comments .single-comment-content .single-comment-top .comment-UserId {
+          color: #FF3399;
+          font-size: 0.8rem; }
+        .newsfeed-comment-page-content .all-single-newsfeed-comments .single-comment-content .single-comment-top button {
+          background-color: white;
+          border: 1px solid white;
+          height: 50%;
+          float: right;
+          color: #FF3399; }
+          .newsfeed-comment-page-content .all-single-newsfeed-comments .single-comment-content .single-comment-top button img {
+            height: 100%; }
+        .newsfeed-comment-page-content .all-single-newsfeed-comments .single-comment-content .single-comment-top .comment-create-time {
+          color: #8E8E8E;
+          font-size: 0.8rem; }
+      .newsfeed-comment-page-content .all-single-newsfeed-comments .single-comment-content .single-comment-bottom {
+        width: 100%;
+        height: 45%;
+        float: left;
+        margin-left: 6vh;
+        margin-top: 2%; }
+        .newsfeed-comment-page-content .all-single-newsfeed-comments .single-comment-content .single-comment-bottom font {
+          margin-top: 20%; }
+  .newsfeed-comment-page-content .comment-input {
+    position: fixed;
+    height: 6%;
+    width: 100%;
+    border-top: 1px solid #BEBEBE; }
+    .newsfeed-comment-page-content .comment-input .file-choose {
+      background-color: white;
+      border: 1px solid white;
+      float: left;
+      height: 100%;
+      width: 15%; }
+      .newsfeed-comment-page-content .comment-input .file-choose img {
+        height: 90%; }
+    .newsfeed-comment-page-content .comment-input .text-area-content {
+      height: 100%;
+      width: 70%;
+      text-align: center;
+      float: left; }
+      .newsfeed-comment-page-content .comment-input .text-area-content input[type="textarea"] {
+        float: left;
+        width: 100%;
+        border: 1px solid grey;
+        height: 75%;
+        margin-top: 1%; }
+    .newsfeed-comment-page-content .comment-input .button-to-comment {
+      float: left;
+      width: 15%;
+      height: 100%;
+      background-color: white;
+      border: 1px solid white; }
+      .newsfeed-comment-page-content .comment-input .button-to-comment font {
+        font-size: 0.8rem;
+        color: #6C6C6C; }
+
+.setting-page-content {
+  display: none;
+  height: 92%;
+  overflow-x: scroll; }
+  .setting-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%;
+    text-align: center; }
+    .setting-page-content .nav-bar button {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      height: 100%;
+      color: white;
+      font-size: 1rem; }
+  .setting-page-content .content {
+    height: 92%;
+    width: 100%; }
+    .setting-page-content .content .singlecontent {
+      height: 7vh;
+      width: 100%;
+      padding-left: 8%;
+      color: #8E8E8E;
+      line-height: 7vh;
+      border-bottom: 1px solid #BEBEBE; }
+
+.img-upload-preview-page-content {
+  height: 100%;
+  width: 100%;
+  display: none; }
+  .img-upload-preview-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%;
+    line-height: 8vh;
+    color: white; }
+    .img-upload-preview-page-content .nav-bar .return-button {
+      float: left;
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      width: 33.3%;
+      color: white;
+      height: 100%;
+      text-align: left; }
+    .img-upload-preview-page-content .nav-bar .page-title {
+      float: left;
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      width: 33.3%;
+      color: white;
+      height: 100%;
+      text-align: center;
+      font-size: 1rem; }
+    .img-upload-preview-page-content .nav-bar .post-button {
+      float: left;
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      width: 33.3%;
+      color: white;
+      height: 100%;
+      font-size: 0.8rem;
+      text-align: right; }
+  .img-upload-preview-page-content img {
+    width: 100%; }
+
+.create-channel-page-content {
+  display: none;
+  height: 92%;
+  overflow-x: scroll; }
+  .create-channel-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%;
+    text-align: left; }
+    .create-channel-page-content .nav-bar button {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      height: 100%;
+      float: left;
+      width: 33.3%;
+      color: white;
+      font-size: 1rem; }
+      .create-channel-page-content .nav-bar button img {
+        height: 60%;
+        float: left; }
+      .create-channel-page-content .nav-bar button .img-setting {
+        height: 60%;
+        float: right; }
+      .create-channel-page-content .nav-bar button font {
+        font-size: 0.5em;
+        float: right;
+        color: white; }
+  .create-channel-page-content .channel-profile {
+    text-align: center;
+    width: 100%;
+    height: 70%; }
+    .create-channel-page-content .channel-profile .wall-paper {
+      position: relative;
+      width: 100%; }
+      .create-channel-page-content .channel-profile .wall-paper input[type="file"] {
+        position: absolute;
+        opacity: 0;
+        height: 100%;
+        width: 100%; }
+      .create-channel-page-content .channel-profile .wall-paper img {
+        width: 100%; }
+    .create-channel-page-content .channel-profile .profile-img {
+      position: relative;
+      width: 25%;
+      margin-top: -15%;
+      text-align: center;
+      margin-left: 37.5%; }
+      .create-channel-page-content .channel-profile .profile-img input[type="file"] {
+        position: absolute;
+        opacity: 0;
+        height: 100%;
+        width: 100%; }
+      .create-channel-page-content .channel-profile .profile-img img {
+        border-radius: 100%;
+        border: 1px solid white;
+        width: 100%; }
+    .create-channel-page-content .channel-profile .channel-name {
+      color: #FF3399;
+      font-size: 1rem;
+      font-weight: bold; }
+    .create-channel-page-content .channel-profile .follow-button {
+      background-color: #FF0099;
+      border: 1px solid #FF0099;
+      color: white;
+      width: 60%;
+      height: 5vh; }
+    .create-channel-page-content .channel-profile .follow-and-post {
+      width: 60%;
+      margin-left: 20%;
+      margin-top: 2vh;
+      color: #8E8E8E;
+      height: 4vh; }
+      .create-channel-page-content .channel-profile .follow-and-post span {
+        width: 50%;
+        float: left;
+        font-size: 0.8rem; }
+    .create-channel-page-content .channel-profile .channel-newsfeed-or-img {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      height: 4vh;
+      margin-top: 2vh; }
+      .create-channel-page-content .channel-profile .channel-newsfeed-or-img .button-left {
+        background-color: white;
+        border: 1px solid white;
+        float: left;
+        width: 20%;
+        height: 100%;
+        font-size: 0.9rem;
+        margin-left: 20%; }
+      .create-channel-page-content .channel-profile .channel-newsfeed-or-img .button-right {
+        background-color: white;
+        border: 1px solid white;
+        float: left;
+        width: 20%;
+        height: 100%;
+        font-size: 0.9rem; }
+  .create-channel-page-content .channel-newsfeed-or-img {
+    width: 98%;
+    height: 10%;
+    padding-left: 0.5%; }
+    .create-channel-page-content .channel-newsfeed-or-img img {
+      width: 32%; }
+  .create-channel-page-content .unopen-title {
+    margin-top: 10%;
+    text-align: center;
+    color: #8E8E8E; }
+
+.forum-type-page-content {
+  height: 92%;
+  width: 100%;
+  display: none; }
+  .forum-type-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%; }
+    .forum-type-page-content .nav-bar .forumtype {
+      float: left;
+      width: 15%;
+      color: white;
+      font-size: 1.5em;
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      height: 100%; }
+    .forum-type-page-content .nav-bar .friendlist {
+      width: 12%;
+      height: 100%;
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      float: left; }
+      .forum-type-page-content .nav-bar .friendlist img {
+        margin-top: 10%;
+        height: 70%; }
+    .forum-type-page-content .nav-bar .search {
+      width: 70%;
+      height: 100%;
+      float: left;
+      text-align: center;
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF; }
+    .forum-type-page-content .nav-bar #search-bar {
+      width: 90%;
+      border: 1px solid #D9006C;
+      border-radius: 4px;
+      box-sizing: border-box;
+      height: 5vh;
+      font-size: 1rem;
+      color: white;
+      background-color: #D9006C; }
+  .forum-type-page-content .content {
+    margin-top: 5%;
+    height: 87%;
+    width: 100%;
+    overflow-y: scroll; }
+    .forum-type-page-content .content .group {
+      margin-top: 2%;
+      width: 100%; }
+      .forum-type-page-content .content .group .bigType {
+        height: 7vh;
+        line-height: 7vh;
+        width: 80%; }
+        .forum-type-page-content .content .group .bigType .name {
+          float: left;
+          color: #FF3399;
+          margin-left: 3vw;
+          font-size: 1.4em; }
+      .forum-type-page-content .content .group .single-forum {
+        height: 6vh;
+        width: 100%;
+        line-height: 6vh; }
+        .forum-type-page-content .content .group .single-forum .img {
+          float: left;
+          height: 95%;
+          width: 6vh;
+          margin-left: 3vw; }
+          .forum-type-page-content .content .group .single-forum .img img {
+            height: 100%; }
+        .forum-type-page-content .content .group .single-forum .name {
+          border-bottom: #BEBEBE 1px solid;
+          margin-left: 5vw;
+          width: 70%;
+          float: left;
+          font-size: 0.9em; }
+
+.friend-list-page-content {
+  height: 92%;
+  width: 100%;
+  display: none; }
+  .friend-list-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%; }
+    .friend-list-page-content .nav-bar .return {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      height: 100%;
+      color: white;
+      width: 33.3%;
+      float: left;
+      font-size: 0.8em;
+      text-align: left; }
+    .friend-list-page-content .nav-bar button {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      height: 100%;
+      color: white;
+      width: 33.3%;
+      float: left;
+      font-size: 1rem; }
+  .friend-list-page-content .content {
+    background-color: #F0F0F0;
+    height: 92%;
+    width: 100%;
+    overflow-y: scroll; }
+    .friend-list-page-content .content .single-letter {
+      margin-top: 3%;
+      height: 10vh;
+      width: 100%;
+      background-color: white; }
+      .friend-list-page-content .content .single-letter .img {
+        margin-left: 3%;
+        float: left;
+        height: 100%; }
+        .friend-list-page-content .content .single-letter .img img {
+          height: 100%; }
+      .friend-list-page-content .content .single-letter .singlecontent {
+        margin-left: 3%;
+        float: left;
+        height: 100%; }
+        .friend-list-page-content .content .single-letter .singlecontent .name {
+          float: left;
+          height: 60%;
+          width: 100%;
+          font-size: 1.2em; }
+        .friend-list-page-content .content .single-letter .singlecontent .message {
+          float: left;
+          height: 40%;
+          width: 100%;
+          color: #8E8E8E;
+          font-size: 0.9em; }
+
+.card-friends-page-content {
+  display: none;
+  height: 92%;
+  overflow-x: scroll;
+  text-align: center; }
+  .card-friends-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%;
+    text-align: center; }
+    .card-friends-page-content .nav-bar button {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      height: 100%;
+      color: white;
+      font-size: 1rem; }
+  .card-friends-page-content .change {
+    height: 92%; }
+    .card-friends-page-content .change .wallpaper {
+      width: 100%; }
+      .card-friends-page-content .change .wallpaper img {
+        width: 100%; }
+    .card-friends-page-content .change .profile {
+      height: 18%;
+      margin-top: -15%; }
+      .card-friends-page-content .change .profile img {
+        height: 100%;
+        border-radius: 1000px;
+        border: 3px solid white; }
+    .card-friends-page-content .change .name {
+      width: 100%;
+      font-size: 1.2em; }
+    .card-friends-page-content .change .sendinvite {
+      width: 100%; }
+      .card-friends-page-content .change .sendinvite button {
+        margin-top: 10%;
+        padding: 1em;
+        border: #D9006C;
+        border-radius: 0.8em;
+        background-color: #FF60AF;
+        color: white;
+        font-size: 0.6em; }
+      .card-friends-page-content .change .sendinvite p {
+        margin-top: 10%;
+        color: #8E8E8E;
+        font-size: 0.6em; }
+    .card-friends-page-content .change .review {
+      margin-left: 10%;
+      width: 80%; }
+      .card-friends-page-content .change .review p {
+        font-size: 0.8em; }
+
+.letter-page-content {
+  display: none;
+  height: 100%;
+  overflow-x: scroll;
+  text-align: center; }
+  .letter-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%; }
+    .letter-page-content .nav-bar .return {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      height: 100%;
+      color: white;
+      width: 33.3%;
+      float: left;
+      font-size: 0.8em;
+      text-align: left; }
+    .letter-page-content .nav-bar button {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      height: 100%;
+      color: white;
+      float: left;
+      width: 33.3%;
+      font-size: 1rem; }
+  .letter-page-content .No-Content {
+    height: 84%;
+    width: 100%;
+    margin-top: 5%;
+    color: grey;
+    font-size: 1em; }
+  .letter-page-content .talk-content {
+    height: 86%;
+    width: 100%;
+    background-color: #F0F0F0;
+    overflow-y: scroll; }
+    .letter-page-content .talk-content .other-talk {
+      float: left;
+      text-align: left;
+      width: 100%;
+      background-color: white;
+      margin-bottom: 3%;
+      height: 20vw; }
+      .letter-page-content .talk-content .other-talk .profile {
+        float: left;
+        height: 12vw;
+        vertical-align: left;
+        width: 100%;
+        line-height: 12vw; }
+        .letter-page-content .talk-content .other-talk .profile img {
+          height: 12vw;
+          border-radius: 100px;
+          width: 12vw;
+          float: left;
+          margin-left: 4%;
+          vertical-align: middle; }
+        .letter-page-content .talk-content .other-talk .profile font {
+          float: left;
+          font-size: 0.6em;
+          margin-left: 2vw; }
+        .letter-page-content .talk-content .other-talk .profile .time {
+          float: right;
+          font-size: 0.6em;
+          color: #8E8E8E;
+          margin-right: 2vw; }
+      .letter-page-content .talk-content .other-talk .content {
+        float: left;
+        height: 8vw;
+        width: 100%; }
+        .letter-page-content .talk-content .other-talk .content font {
+          float: left;
+          margin-left: 20vw; }
+    .letter-page-content .talk-content .my-talk {
+      text-align: right;
+      height: 20vw;
+      float: right;
+      width: 100%;
+      background-color: white;
+      margin-bottom: 3%; }
+      .letter-page-content .talk-content .my-talk .profile {
+        float: right;
+        height: 12vw;
+        vertical-align: right;
+        width: 100%;
+        line-height: 12vw; }
+        .letter-page-content .talk-content .my-talk .profile img {
+          vertical-align: middle;
+          width: 12vw;
+          float: right;
+          margin-right: 4%;
+          height: 12vw;
+          border-radius: 100px; }
+        .letter-page-content .talk-content .my-talk .profile font {
+          float: right;
+          font-size: 0.6em;
+          margin-right: 2vw; }
+        .letter-page-content .talk-content .my-talk .profile .time {
+          float: left;
+          font-size: 0.6em;
+          color: #8E8E8E;
+          margin-left: 2vw; }
+      .letter-page-content .talk-content .my-talk .content {
+        float: right;
+        height: 8vw;
+        width: 100%;
+        line-height: 8vw; }
+        .letter-page-content .talk-content .my-talk .content font {
+          font-size: 1em;
+          font-weight: 600;
+          float: left;
+          margin-left: 14vw; }
+  .letter-page-content .input-content {
+    height: 5%;
+    width: 100%;
+    bottom: 0px;
+    z-index: 1000; }
+    .letter-page-content .input-content input[type="textarea"] {
+      width: 80%;
+      height: 95%;
+      float: left;
+      border: grey 1px solid;
+      font-size: 1em; }
+    .letter-page-content .input-content button {
+      width: 15%;
+      height: 100%;
+      background-color: white;
+      border: 1px solid grey; }
+
+.alert-window {
+  display: none;
+  position: relative;
+  height: 50%;
+  margin-top: 25%;
+  margin-left: 20%;
+  width: 30%;
+  background-color: #FF60AF;
+  z-index: 2000; }
+
+.class-schedule-page-content {
+  display: none;
+  height: 92%; }
+  .class-schedule-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%;
+    text-align: center; }
+    .class-schedule-page-content .nav-bar button {
+      background-color: #FF60AF;
+      border: 1px solid #FF60AF;
+      height: 100%;
+      color: white;
+      font-size: 1rem; }
+  .class-schedule-page-content .content {
+    height: 92%;
+    width: 100%;
+    overflow-y: scroll; }
+    .class-schedule-page-content .content .single-class {
+      padding-left: 5vw;
+      width: 100vw;
+      height: 10vh;
+      border-bottom: #BEBEBE 1px solid; }
+      .class-schedule-page-content .content .single-class .top {
+        height: 50%;
+        width: 100%;
+        float: left;
+        line-height: 5vh; }
+        .class-schedule-page-content .content .single-class .top .className {
+          color: #FF3399;
+          font-size: 1em; }
+        .class-schedule-page-content .content .single-class .top .score {
+          float: right;
+          color: #8E8E8E;
+          margin-right: 7vw; }
+      .class-schedule-page-content .content .single-class .bottom {
+        height: 50%;
+        width: 100%;
+        float: left;
+        line-height: 5vh; }
+        .class-schedule-page-content .content .single-class .bottom .classroom {
+          float: left;
+          color: black; }
+        .class-schedule-page-content .content .single-class .bottom .classtime {
+          float: left;
+          margin-left: 3vw;
+          color: #8E8E8E; }
+
+.search-bar-page-content {
+  height: 92%;
+  width: 100%;
+  display: none; }
+  .search-bar-page-content .nav-bar {
+    height: 8%;
+    background-color: #FF60AF;
+    width: 100%; }
+    .search-bar-page-content .nav-bar .forumtype {
+      float: left;
+      width: 15%;
+      color: white;
+      font-size: 1.5em;
+      height: 100%;
+      text-align: center;
+      padding-top: 2%; }
+    .search-bar-page-content .nav-bar .friendlist {
+      width: 15%;
+      height: 100%;
+      float: left; }
+      .search-bar-page-content .nav-bar .friendlist img {
+        margin-top: 15%;
+        height: 70%; }
+    .search-bar-page-content .nav-bar .search {
+      width: 70%;
+      height: 100%;
+      float: left;
+      text-align: center; }
+    .search-bar-page-content .nav-bar #search-bar {
+      margin-top: 1.2vh;
+      width: 90%;
+      border: 1px solid #D9006C;
+      border-radius: 4px;
+      box-sizing: border-box;
+      height: 5vh;
+      font-size: 1rem;
+      color: white;
+      background-color: #D9006C; }
+  .search-bar-page-content .content {
+    width: 100%;
+    height: 92%;
+    overflow-y: scroll; }
+    .search-bar-page-content .content .single-history {
+      margin-bottom: 2vh;
+      width: 100%;
+      border-bottom: #BEBEBE 1px solid;
+      height: 6vh;
+      text-align: left;
+      line-height: 6vh; }
+      .search-bar-page-content .content .single-history .img {
+        height: 6vh;
+        float: left;
+        margin-left: 2vw;
+        width: 6vh;
+        border-radius: 5px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%; }
+      .search-bar-page-content .content .single-history font {
+        color: black;
+        font-size: 1em;
+        margin-left: 3vw; }
+
+body {
+  background-color: #FF60AF;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  -webkit-overflow-scrolling: touch; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,48 @@
+.register-page-content {
+    display: none;
+    text-align: center;
+    #phone-register {
+        width: 75%;
+        padding: 0.6rem;
+        display: inline-block;
+        border: 1px solid $input-type-border;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 50vh;
+    }
+    #account-register {
+        width: 75%;
+        padding: 0.6rem;
+        display: inline-block;
+        border: 1px solid $input-type-border;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 1vh;
+    }
+    #password-register {
+        width: 75%;
+        padding: 0.6rem;
+        display: inline-block;
+        border: 1px solid $input-type-border;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 1vh;
+    }
+     #register-botton {
+        width: 75%;
+        margin-top: 1vh;
+        background-color: $second-color;
+        border: none;
+        color: white;
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+    #go-login-botton {
+        margin-top: 2vh;
+        width: 75%;
+        background-color: $main-color;
+        border: none;
+        color: white;
+        font-size: 0.9rem;
+    }
+}

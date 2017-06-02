@@ -1,0 +1,26 @@
+$main-color: #FF60AF;
+$second-color: #FF359A;
+$search-bar-color: #D9006C;
+$grey-text: #8E8E8E;
+$main-text: #FF3399;
+$hr: #BEBEBE;
+$input-type-border: #ccc;
+$yet-read-background: #FCFCFC;
+$follow-button: #FF0099;
+
+@import "login-content-page","register-content-page","newsfeed-content-page","bottom-bar","post-content-page","channel-profile-content-page","friends_content-page","bell-content-page","other-content-page","single-newsfeed-content-page","newsfeed-comment-content-page","setting-content-page","img-upload-preview-content-page","create-channel-content-page","forum-type-content-page","friend-list-content-page","card-friends-content-page","letter-content-page","alert_window","class-schedule-content-page","search-bar-content-page";
+
+
+
+body {
+    background-color: $main-color;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
+}
+//隱藏 scroll bar
+::-webkit-scrollbar { 
+    display: none; 
+}

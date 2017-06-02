@@ -1,0 +1,670 @@
+<!Doctype html>
+<html>
+<!-- demo 用 可刪 -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <link rel=stylesheet type="text/css" href="scss/style.css">
+    <script src="js/global.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!------page content------>
+    <!--Login 登入 頁面-->
+    <div class="login-page-content" id="login-page-content">
+        <input type="text" id="account-input" placeholder="輸入帳號...">
+        <input type="password" id="password-input" placeholder="輸入密碼...">
+        <button id="login-botton" onclick="Login_page_content.Login()">登   入</button>
+        <button id="go-register-botton" onclick="Login_page_content.GoRegisterPage()">還沒有帳號嗎？點擊此註冊</button>
+    </div>
+
+    <!--Register 註冊 頁面-->
+    <div class="register-page-content" id="register-page-content">
+        <input type="number" id="phone-register" placeholder="輸入手機號碼...">
+        <input type="text" id="account-register" placeholder="輸入註冊帳號...">
+        <input type="password" id="password-register" placeholder="輸入註冊密碼...">
+        <button id="register-botton" onclick="Register_page_content.Register()">註  冊</button>
+        <button id="go-login-botton" onclick="Register_page_content.GoLoginPage()">已經有帳號了嗎？點擊進行登入</button>
+    </div>
+
+    <!-- NewsFeed 動態 頁面 -->
+    <!--login 進去的首頁 -->
+    <div class="newsfeed-page-content" id="newsfeed-page-content">
+        <div class="nav-bar">
+            <div class="forumtype" onclick="NewsFeedGoForumType()">&#9776;</div>
+            <div class="search">
+                <input type="text" placeholder="搜尋..." id="search-bar" onkeyup="Search(this.value)" onfocus="SearchHistory()">
+            </div>
+            <div class="friendlist" onclick="GoFriendlist()">
+                <img src="demo/tku_app_friends.png">
+            </div>
+        </div>
+        <div class="newsfeed-btn-group">
+            <button id="forum-name"></button>
+            <button id="newsfeed-btn-newest" onclick="newsfeed_newest()">最新</button>
+            <button id="newsfeed-btn-hottest" onclick="newsfeed_hottest()">熱門</button>
+        </div>
+
+        <!-- all newsfeed -->
+        <div class="all-newsfeed-content">
+
+            <!-- single newsfeed -->
+            <div class="single-newsfeed-content">
+                <!-- Channel Img & Channel Name -->
+                <div class="channel-profile-content" id="go-to-channel">
+                    <img src="demo/profile_demo.png">
+                    <font class="channel-name">ChannelName</font>
+                    <br>
+                    <font class="create-time">CreateTime</font>
+                </div>
+                <img src="demo/post_demo.png" class="post-img">
+                <!-- content text -->
+                <div class="text-content">
+                    <font>HTML is a language for describing web pages.<br/>HTML is a language for describing...</font>
+                    <button class="keep-reading">繼續閱讀</button>
+                    <hr>
+
+                    <!-- client button -->
+                    <div class="client-button">
+                        <button><img src="demo/heart-icon.png">83</button>
+                        <button onclick="NewsfeedComment()"><img src="demo/comment-icon.png">62</button>
+                        <button><img src="demo/storage.png" onclick="NewsFeedStorage()">收藏</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Post 貼文 頁面 -->
+    <!--post 貼文page dont 想 say了-->
+    <div class="post-page-content" id="post-page-content">
+        <div class="nav-bar">
+            <button class="return-button" onclick="PostReturn()">回上一頁</button>
+            <button class="page-title">分享生活</button>
+            <button class="post-button" item="1" onclick="Post_page_content.PostNewsFeed()">發佈</button>
+        </div>
+
+        <!-- 選擇貼文頻道 -->
+        <div class="choose-post-channel" onclick="Post_page_content.PostChooseForum()">
+            <div class="channel-img">
+                <img src="demo/TKU-logo.jpg">
+            </div>
+            <div class="channel-profile">
+                <div class="channel-name">
+                    <font>透可版</font>
+                </div>
+                <div class="choose-others-channel">
+                    <font>點擊選擇其他頻道</font>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown-content">
+        </div>
+
+
+        <div class="text-content">
+            <textarea placeholder="想分享些什麼呢？"></textarea>
+            <img src="" class="demo-chooose-img" id="post-onchange-img">
+            <video class="demo-choose-video" controls id="post-onchange-video" src=""></video>
+
+        </div>
+        <!-- file & tag -->
+        <div class="file-tag">
+            <button>
+                <input type="file" id="post-choose-img" onchange="Global.preview(this,'post-onchange-img')">
+                <img src="demo/galleryIcon.png">選擇圖/影片
+            </button>
+            <button>
+               <input type="file" id="post-choose-video" onchange="Global.preview(this,'post-onchange-video')">
+                <img src="demo/video-icon.png">選擇影片
+            </button>
+        </div>
+    </div>
+
+    <!-- Channel Profile 頻道詳細資料 頁面 -->
+    <!--使用者頻道頁面 已拔掉 babytube專案裡面才有-->
+    <div class="channel-profile-page-content" id="channel-profile-page-content">
+        <div class="nav-bar">
+            <button id="channel-return-last-page"><img src="demo/left-arrow.png"></button>
+            <button>ChannelName</button>
+            <button>
+            <img src="demo/setting-icon.png" class="img-setting">
+            </button>
+        </div>
+        <!-- 基本資料 -->
+        <div class="channel-profile">
+            <img src="demo/post_demo.png" class="wall-paper" id="channel-profile-profile-wallpaper">
+            <img src="demo/profile_demo.png" class="profile-img" id="channel-profile-profile-img">
+            <p class="channel-name">Channel Name</p>
+            <button class="follow-button" id="channel-profile-follow-button">追蹤</button>
+            <div class="follow-and-post">
+                <span>383追蹤者</span>
+                <span>383則貼文</span>
+            </div>
+            <!-- channel newsfeed & image btn group -->
+
+            <div class="channel-newsfeed-or-img">
+                <button class="button-left">照片</button>
+                <button class="button-right">動態</button>
+                <button class="button-right">設計</button>
+            </div>
+        </div>
+
+        <!-- channel newsfeed -->
+        <div class="channel-newsfeed-or-img">
+            <img src="demo/grey-background-square.jpg" id="channel-profile-newsfeed-img">
+            <img src="demo/grey-background-square.jpg">
+            <img src="demo/grey-background-square.jpg">
+            <!-- demo 用 可刪 -->
+            <img src="demo/grey-background-square.jpg">
+            <img src="demo/grey-background-square.jpg">
+            <img src="demo/grey-background-square.jpg">
+            <img src="demo/grey-background-square.jpg">
+            <img src="demo/grey-background-square.jpg">
+            <img src="demo/grey-background-square.jpg">
+            <img src="demo/grey-background-square.jpg">
+            <img src="demo/grey-background-square.jpg">
+            <img src="demo/grey-background-square.jpg">
+            <!-- demo 用 可刪 -->
+        </div>
+    </div>
+
+    <!-- FriendShip 好友邀請 頁面-->
+    <!--好問題 我想一下這是三小-->
+    <div class="friends-page-content" id="friends-page-content">
+        <div class="nav-bar">
+            <button>這是個看臉的世界...</button>
+            <button class="friend-icon" onclick="GoFriendlist()">
+                <img src="demo/tku_app_friends.png">
+            </button>
+        </div>
+        <div class="content">
+            <div class="wallpaper">
+                <img src="demo/tku_cristmas_wallpaper.jpg">
+            </div>
+            <div class="couple-icon">
+                <img src="demo/couple_black.png">
+            </div>
+
+            <p>
+                你知道嗎？過度的謾罵會降低遊戲13%勝率
+            </p>
+
+            <button onclick="getCard()">
+                抽取今天的學伴
+            </button>
+        </div>
+    </div>
+
+    <!-- Bell 通知 頁面 -->
+    <!--bottom-bar的bellpage-->
+    <div class="bell-page-content" id="bell-page-content">
+        <div class="nav-bar">
+            <button>通 知</button>
+        </div>
+        <div class="bell-list">
+            <div class="single-bell-content">
+                <img src="demo/profile_demo.png">
+                <font class="user-id">UserId</font>
+                <font class="bell-content-text">覺得你的影片很可愛</font>
+            </div>
+        </div>
+    </div>
+
+    <!-- others 頁面 -->
+    <!--bottom-bar的 other paeg -->
+    <div class="other-page-content" id="other-page-content">
+        <div class="nav-bar">
+            <button class="setting-button" onclick="GoSetting()">
+                <img src="demo/setting-icon.png">
+            </button>
+            <button class="page-title">個人資料</button>
+        </div>
+
+        <!-- 個人資料 -->
+        <div class="user-profile">
+            <div class="profile-wallpaper">
+                <input type="file" id="other-page-change-profile-wall-paper" onchange="Global.preview_page_show(this)">
+                <img src="demo/grey-wallpaper-15.jpg">
+            </div>
+            <div class="profile-headimg">
+                <input type="file" id="other-page-change-profileimg" onchange="Global.preview_page_show(this)">
+                <img src="demo/profile-default.png" id="other-page-profile-img">
+            </div>
+            <div class="profile-name">
+                <button onclick="OtherChangeUserName()">
+                    <font id="other-page-profile-name">UserName</font>
+                    <img src="demo/edit2.png">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- single newsfeed 頁面 -->
+    <!--還在想要不要加上去-->
+    <div class="single-newsfeed-page-content" id="single-newsfeed-page-content">
+        <div class="nav-bar">
+            <button class="return-button" id="single-newsfeed-return-last-page"><img src="demo/left-arrow.png"></button>
+            <input type="text" id="search-bar" placeholder="搜尋...">
+        </div>
+        <!-- 整個 可滑動內容 頁面-->
+        <div class="all-content">
+            <!-- single newsfeed -->
+            <div class="single-newsfeed-content">
+                <!-- Channel Img & Channel Name -->
+                <div class="channel-profile-content" id="single-newsfeed-go-to-channel">
+                    <img src="demo/profile_demo.png">
+                    <font class="channel-name">ChannelName</font>
+                    <br>
+                    <font class="create-time">CreateTime</font>
+                </div>
+                <img src="demo/post_demo.png" class="post-img">
+                <!-- content text -->
+                <div class="text-content">
+                    <font>HTML is a language for describing web pages.<br/>HTML is a language for describing...HTML is a language for describing web pages.<br/>HTML is a language for describing...HTML is a language for describing web pages.<br/>HTML is a language for describing...HTML is a language for describing web pages.<br/>HTML is a language for describing...</font>
+                    <!-- client button -->
+                    <div class="client-button">
+                        <button><img src="demo/heart-icon.png">83</button>
+                        <button id="newfeed-comment-button"><img src="demo/comment-icon.png">62</button>
+                        <button><img src="demo/storage.png">收藏</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- all comment content -->
+            <div class="all-single-newsfeed-comments">
+                <!-- single comment -->
+                <div class="single-comment-content">
+                    <div class="single-comment-top">
+                        <img src="demo/reading.png" class="comment-profile">
+                        <font class="comment-UserId">Username</font>
+                        <button><img src="demo/heart-icon.png">30</button>
+                        <br>
+                        <font class="comment-create-time">CreateTime</font>
+                    </div>
+                    <div class="single-comment-bottom">
+                        <font>
+                            lalalalalalalalalalallalallaalala幹
+                        </font>
+                    </div>
+                </div>
+                <!-- demo 用 可刪 -->
+                <div class="single-comment-content">
+                    <div class="single-comment-top">
+                        <img src="demo/reading.png" class="comment-profile">
+                        <font class="comment-UserId">Username</font>
+                        <button><img src="demo/heart-icon.png">30</button>
+                        <br>
+                        <font class="comment-create-time">CreateTime</font>
+                    </div>
+                    <div class="single-comment-bottom">
+                        <font>
+                            lalalalalalalalalalallalallaalala幹
+                        </font>
+                    </div>
+                </div>
+                <div class="single-comment-content">
+                    <div class="single-comment-top">
+                        <img src="demo/reading.png" class="comment-profile">
+                        <font class="comment-UserId">Username</font>
+                        <button><img src="demo/heart-icon.png">30</button>
+                        <br>
+                        <font class="comment-create-time">CreateTime</font>
+                    </div>
+                    <div class="single-comment-bottom">
+                        <font>
+                            lalalalalalalalalalallalallaalala幹
+                        </font>
+                    </div>
+                </div>
+                <div class="single-comment-content">
+                    <div class="single-comment-top">
+                        <img src="demo/reading.png" class="comment-profile">
+                        <font class="comment-UserId">Username</font>
+                        <button><img src="demo/heart-icon.png">30</button>
+                        <br>
+                        <font class="comment-create-time">CreateTime</font>
+                    </div>
+                    <div class="single-comment-bottom">
+                        <font>
+                            lalalalalalalalalalallalallaalala幹
+                        </font>
+                    </div>
+                </div>
+                <div class="single-comment-content">
+                    <div class="single-comment-top">
+                        <img src="demo/reading.png" class="comment-profile">
+                        <font class="comment-UserId">Username</font>
+                        <button><img src="demo/heart-icon.png">30</button>
+                        <br>
+                        <font class="comment-create-time">CreateTime</font>
+                    </div>
+                    <div class="single-comment-bottom">
+                        <font>
+                            lalalalalalalalalalallalallaalala幹
+                        </font>
+                    </div>
+                </div>
+                <div class="single-comment-content">
+                    <div class="single-comment-top">
+                        <img src="demo/reading.png" class="comment-profile">
+                        <font class="comment-UserId">Username</font>
+                        <button><img src="demo/heart-icon.png">30</button>
+                        <br>
+                        <font class="comment-create-time">CreateTime</font>
+                    </div>
+                    <div class="single-comment-bottom">
+                        <font>
+                            lalalalalalalalalalallalallaalala幹
+                        </font>
+                    </div>
+                </div>
+                <div class="single-comment-content">
+                    <div class="single-comment-top">
+                        <img src="demo/reading.png" class="comment-profile">
+                        <font class="comment-UserId">Username</font>
+                        <button><img src="demo/heart-icon.png">30</button>
+                        <br>
+                        <font class="comment-create-time">CreateTime</font>
+                    </div>
+                    <div class="single-comment-bottom">
+                        <font>
+                            lalalalalalalalalalallalallaalala幹
+                        </font>
+                    </div>
+                </div>
+                <!-- demo 用 可刪 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- only comment 頁面 -->
+    <!--點擊newsfeed comment -> slideUp的page-->
+    <div class="newsfeed-comment-page-content" id="newsfeed-comment-page-content">
+        <div class="nav-bar">
+            <div class="return-button"><button id="newsfeed-comment-return-button" onclick="BottomBar_bar.BottomGoNewsfeed()">返回</button></div>
+            <button class="page-title">留言</button>
+        </div>
+
+        <!-- all comment content -->
+        <div class="all-single-newsfeed-comments">
+        </div>
+
+        <!-- input comment content -->
+        <div class="comment-input">
+            <button class="file-choose">
+                <img src="demo/galleryIcon.png">
+            </button>
+            <span class="text-area-content">
+                <input type="textarea" placeholder="輸入留言..." id="comment_input">
+            </span>
+            <button class="button-to-comment" onclick="Newsfeed_comment_page_content.CommentInput(this.id)">
+                <font>留言</font>
+            </button>
+        </div>
+    </div>
+
+    <!-- search bar 頁面 -->
+    <!--搜尋bar按下的頁面-->
+    <div class="search-bar-page-content" id="search-bar-page-content">
+        <div class="nav-bar">
+            <div class="forumtype" onclick="NewsFeedGoForumType()">&#9776;</div>
+            <div class="search">
+                <input type="text" placeholder="搜尋..." id="search-bar" onkeyup="Search(this.value)" onfocus="SearchHistory()">
+            </div>
+            <div class="friendlist" onclick="GoFriendlist()">
+                <img src="demo/tku_app_friends.png">
+            </div>
+        </div>
+        <div class="content">
+        </div>
+    </div>
+
+    <!-- setting 頁面 -->
+    <!--使用者個人設定的頁面-->
+    <div class="setting-page-content" id="setting-page-content">
+        <div class="nav-bar">
+            <button>
+                設定頁面
+            </button>
+        </div>
+        <div class="content">
+            <div class="singlecontent" onclick="SettingPage.LogOut()">
+                登出
+            </div>
+            <div class="singlecontent" onclick="SettingPage.MySchedule()">
+                我的課表
+            </div>
+            <div class="singlecontent" onclick="SettingPage.MyTestSchedule()">
+                考試小表
+            </div>
+            <div class="singlecontent" onclick="SettingPage.MyTestScore()">
+                期中期末成績
+            </div>
+            <div class="singlecontent" onclick="SettingPage.TkuWifiConnect()">
+                淡江wifi
+            </div>
+        </div>
+    </div>
+
+    <!-- 上傳圖片預覽 頁面-->
+    <!--上傳個人大頭貼的預覽頁-->
+    <div class="img-upload-preview-page-content" id="img-upload-preview-page-content">
+        <div class="nav-bar">
+            <button class="return-button" onclick="PreivewImgShowReturn()">回上一頁</button>
+            <button class="page-title">圖片上傳預覽</button>
+            <button class="post-button" onclick="Global.preview_page_show_upload()">確定</button>
+        </div>
+        <img src="" id="img-upload-preview-show">
+    </div>
+
+    <!-- ClassSchedule 頁面 -->
+    <!--點擊setting中的使用者課表頁面-->
+    <div class="class-schedule-page-content" id="class-schedule-page-content">
+        <div class="nav-bar">
+            <button>我的課表</button>
+        </div>
+
+        <div class="content">
+            <div class="single-class">
+                <div class="top">
+                    <font class="className">
+                        中文學程
+                    </font>
+                    <font class="score">
+                        3學分
+                    </font>
+                </div>
+                <div class="bottom">
+                    <font class="classroom">
+                        L301
+                    </font>
+                    <font class="classtime">
+                        四下午
+                    </font>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- create channel 頁面-->
+    <!--已刪 babytube用的 在考慮要不要加回去-->
+    <div class="create-channel-page-content" id="create-channel-page-content">
+        <div class="nav-bar">
+            <button onclick="CreateChannelReturn()"><img src="demo/left-arrow.png"></button>
+            <button>新增頻道頁面</button>
+            <button>
+            <font>確定新增</font>
+            </button>
+        </div>
+        <!-- 基本資料 -->
+        <div class="channel-profile">
+            <div class="wall-paper">
+                <input type="file" onchange="Global.preview_page_show(this,1)">
+                <img src="demo/grey-wallpaper-15.jpg" id="channel-profile-profile-wallpaper">
+            </div>
+            <div class="profile-img">
+                <input type="file" onchange="Global.preview_page_show(this)">
+                <img src="demo/profile-default.jpeg" id="channel-profile-profile-img">
+            </div>
+
+
+            <p class="channel-name">點擊設定頻道名稱</p>
+            <div class="follow-and-post">
+                <span>0追蹤者</span>
+                <span>0則貼文</span>
+            </div>
+            <!-- channel newsfeed & image btn group -->
+            <div class="channel-newsfeed-or-img">
+                <button class="button-left">照片</button>
+                <button class="button-right">動態</button>
+                <button class="button-right">設計</button>
+            </div>
+        </div>
+        <div class="unopen-title">
+            此帳號尚無貼文...
+        </div>
+    </div>
+
+    <!-- forum type 頁面 -->
+    <!--點擊左上跳出的顯示社團列表-->
+    <div class="forum-type-page-content" id="forum-type-page-content">
+        <div class="nav-bar">
+            <button class="forumtype">&#9776;</button>
+            <button class="search">
+                <input type="text" placeholder="搜尋..." id="search-bar">
+            </button>
+            <button class="friendlist" onclick="GoFriendlist()">
+                <img src="demo/tku_app_friends.png">
+            </button>
+        </div>
+        <div class="content">
+            <div class="group">
+                <div class="single-forum">
+                    <div class="name">
+                        全部
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <div class="bigType">
+                    <font class="name">
+                        學生版
+                    </font>
+                </div>
+                <div class="single-forum">
+                    <div class="img">
+                        <img src="demo/TKU-logo.jpg">
+                    </div>
+                    <div class="name">
+                        透可版
+                    </div>
+                </div>
+            </div>
+            <!-- demo 可刪 -->
+
+        </div>
+    </div>
+
+    <!-- card friend 頁面 -->
+    <!--點擊BottomBar_bar跳出的今日卡有-->
+    <div class="card-friends-page-content" id="card-friends-page-content">
+        <div class="nav-bar">
+            <button>今日卡友</button>
+        </div>
+        <div class="change">
+            <div class="wallpaper">
+                <img src="demo/kyon.png">
+            </div>
+            <div class="profile">
+                <img src="demo/kyon%20profile.png">
+            </div>
+            <div class="name">
+                <p>Kyon</p>
+            </div>
+
+            <div class="review">
+                <p>自我介紹區</p>
+            </div>
+            <div class="sendinvite">
+                <button>
+                向對方送出邀請
+            </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- friend list 頁面-->
+    <!--點擊右上角跳出的朋友列表-->
+    <div class="friend-list-page-content" id="friend-list-page-content">
+        <div class="nav-bar">
+            <button class="return" onclick="friendlistreturn()">
+                返回
+            </button>
+            <button>
+               信件頁面
+           </button>
+        </div>
+        <div class="content">
+        </div>
+    </div>
+
+    <!-- letter 頁面 -->
+    <!--跟朋友互相對話的頁面-->
+    <div class="letter-page-content" id="letter-page-content">
+        <div class="nav-bar">
+            <button class="return" onclick="letterpagereturn()">
+                返回
+            </button>
+            <button>
+                和學伴的對話內容
+            </button>
+        </div>
+        <div class="talk-content">
+        </div>
+       <div class="input-content">
+           <input type="textarea" placeholder="輸入內容..." id="wannatalk">
+           <button onclick="TalkSubmit(this.id)">傳送</button>
+       </div>
+    </div>
+
+
+
+    <!--bottom-bar-->
+    <!--bottom_bar.show();-->
+    <div id="bottom-bar" class="bottom-bar">
+        <button id="bottom-bar-newsfeed" onclick="BottomBar_bar.BottomGoNewsfeed()">
+        <img src="demo/newsfeed-icon.png">
+        <br>
+        動態
+        </button>
+        <button id="bottom-bar-friends" onclick="BottomBar_bar.BottomGoFriends()">
+        <img src="demo/friends-icon.png">
+        <br>
+        好友
+        </button>
+        <button onclick="BottomBar_bar.BottomGoPost()">
+            <img src="demo/post-icon.png">
+            <br>
+        發文
+        </button>
+        <button id="bottom-bar-bell" onclick="BottomBar_bar.BottomGoBell()">
+        <img src="demo/bell-icon.png">
+        <span class="num">10</span>
+        <br>
+        通知
+        </button>
+        <button id="bottom-bar-others" onclick="BottomBar_bar.BottomGoOther()">
+            <img src="demo/others-icon.png">
+            <br>
+        其他
+        </button>
+    </div>
+</body>
+<script src="js/global.js"></script>
+
+</html>

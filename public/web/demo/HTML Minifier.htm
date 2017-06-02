@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://www.willpeavy.com/minifier/ -->
+<html hc="delumine-smart "><div id="deluminate_fullscreen_workaround" style="position: absolute; top: 0px; left: 0px; width: 1440px; height: 757px; display: block; z-index: -2147483647; background: none 0% 0% / auto repeat scroll padding-box border-box white;"></div><div id="deluminate_backdrop" style="position: fixed; top: 0px; left: 0px; height: 100vh; width: 100vw; z-index: -2147483648;"></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>HTML Minifier</title>
+        <meta name="author" content="William Henry Peavy">
+        <meta name="description" content="Free web-based tool to minify HTML and any CSS or JS included in your markup.">
+        <link rel="stylesheet" href="./HTML Minifier_files/css">
+        <link rel="stylesheet" href="./HTML Minifier_files/css.min.css">
+        <script type="text/javascript" async="" src="./HTML Minifier_files/ga.js"></script><script src="./HTML Minifier_files/jquery-1.12.4.min.js"></script>
+<script src="./HTML Minifier_files/wp.min.js"></script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19280957-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>    </head>
+
+    <body id="minifier">
+
+        <div id="header">
+            <span><a href="http://www.willpeavy.com/">www.willpeavy.com</a> / minifier /</span>
+        </div>
+
+        <h1>HTML Minifier</h1>
+        <p>Minify <abbr title="HyperText Markup Language">HTML</abbr> and any <abbr title="Cascading Style Sheets">CSS</abbr> or <abbr title="JavaScript">JS</abbr> included in your markup</p>
+
+        <div id="jobs">
+            <h3> About the Minifier</h3>
+            <noscript>View web developer job openings at &lt;a href="http://joba.co/us/web-developer" target="_blank"&gt;joba.co/us/web-developer&lt;/a&gt;</noscript>
+        
+        <style>
+            form {width:83%}
+            #jobs {display:block}
+            #jobs p {font-size: 1.2em}
+            #jobs a {text-decoration: underline}
+        </style>
+
+        <script>
+            $('#html').width(cW - 280);
+            $('#jobs h3').text(' About the Minifier');
+        </script>
+
+        <p>A lot of people ask about how this Minifier was built.</p>
+
+        <p>
+            It's essentially a series of regular expressions and replace functions written in
+            <a href="http://php.net/" target="_blank">PHP</a>, running through
+            <a href="http://httpd.apache.org/" target="_blank">Apache</a> on
+            <a href="http://www.linuxfoundation.org/" target="_blank">Linux</a>.
+        </p>
+
+        <p>
+            If you'd like to get in touch with me - a good way is through Twitter,
+            <a href="https://twitter.com/willpeavy" target="_blank">@willpeavy</a>
+        </p>
+    </div>
+
+        <form action="http://www.willpeavy.com/minifier/" method="post">
+            <p><textarea id="html" name="html" style="width: 1160px; height: 533px;">&lt;div class="group"&gt; &lt;div class="single-forum"&gt; &lt;div class="name"&gt; 全部 &lt;\/div&gt;&lt;\/div&gt;&lt;/div&gt;</textarea></p>
+            <p><button>Minify</button></p>
+        </form>
+
+        <p id="notes"><em>Note:</em> to ensure your scripts work after minification - terminate JS statements with a semicolon, and use /* */ syntax for comments.</p>
+
+        <script>
+
+            var cH = $(document).height();
+            var cW = $(document).width();
+            $('#html').width(cW - 65);
+
+            if (top != self) iFr = true;
+            else iFr = false;
+
+            $.get('jobs.php', {ch: cH, ifr: iFr})
+                .done(function(data){
+                    $('#jobs').append(data);
+                });
+        </script>
+
+    
+
+</body></html>

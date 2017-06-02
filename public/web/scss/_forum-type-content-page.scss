@@ -1,0 +1,94 @@
+.forum-type-page-content {
+    height: 92%;
+    width: 100%;
+    display: none;
+//    background-color: $main-color;
+//    border: 1px solid $main-color;
+    //background-color: red;
+    .nav-bar {
+        height: 8%;
+        background-color: $main-color;
+        width: 100%;
+        .forumtype {
+            float: left;
+            width: 15%;
+            color: white;
+            font-size: 1.5em;
+            background-color: $main-color;
+            border: 1px solid $main-color;
+            height: 100%;
+        }
+        .friendlist {
+            width: 12%;
+            height: 100%;
+            background-color: $main-color;
+            border: 1px solid $main-color;
+            float: left;
+            img {
+                margin-top: 10%;
+                height: 70%;
+            }
+        }
+        .search {
+            width: 70%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            background-color: $main-color;
+            border: 1px solid $main-color;
+        }
+        #search-bar {
+            width: 90%;
+            border: 1px solid $search-bar-color;
+            border-radius: 4px;
+            box-sizing: border-box;
+            height: 5vh;
+            font-size: 1rem;
+            color: white;
+            background-color: $search-bar-color;
+        }
+    }
+    .content {
+        margin-top: 5%;
+        height: 87%; 
+        width: 100%;
+        overflow-y: scroll;
+        .group {
+            margin-top: 2%;
+            width: 100%;
+            .bigType {
+            height: 7vh;
+            line-height: 7vh;
+            width: 80%;
+            .name {
+                float: left;
+                color: $main-text;
+                margin-left: 3vw;
+                font-size: 1.4em;
+            }
+        }
+        .single-forum {
+            height: 6vh;
+            width: 100%;
+            line-height: 6vh;
+            .img {
+                float: left;
+                height: 95%;
+                width: 6vh;
+                margin-left: 3vw;
+                img {
+                    height: 100%;
+                }
+            }
+            .name {
+                border-bottom: $hr 1px solid;
+                margin-left: 5vw;
+                width: 70%;
+                float: left;
+                font-size: 0.9em;
+            }
+        }
+        }
+        
+    }
+}

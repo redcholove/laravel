@@ -1,0 +1,174 @@
+.newsfeed-page-content {
+    height: 92%;
+    width: 100%;
+    display: none;
+    //background-color: red;
+    .nav-bar {
+        height: 8%;
+        background-color: $main-color;
+        width: 100%;
+        .forumtype {
+            float: left;
+            width: 15%;
+            color: white;
+            font-size: 1.5em;
+            height: 100%;
+            text-align: center;
+            padding-top: 2%;
+        }
+        .friendlist {
+            width: 15%;
+            height: 100%;
+            float: left;
+            img {
+                margin-top: 15%;
+                height: 70%;
+            }
+        }
+        .search {
+            width: 70%;
+            height: 100%;
+            float: left;
+            text-align: center;
+        }
+        #search-bar {
+            margin-top: 1.2vh;
+            width: 90%;
+            border: 1px solid $search-bar-color;
+            border-radius: 4px;
+            box-sizing: border-box;
+            height: 5vh;
+            font-size: 1rem;
+            color: white;
+            background-color: $search-bar-color;
+        }
+    }
+    .newsfeed-btn-group {
+        margin-top: 2%;
+        height: 5%;
+        border-bottom: 1px solid $input-type-border;
+        #forum-name {
+            background-color: white;
+            border: white 1px solid;
+            float: left;
+            height: 100%;
+            font-size: 1rem;
+            color: $grey-text;
+        }
+        #newsfeed-btn-newest {
+            float: right;
+            background-color: white;
+            height: 100%;
+            border: 1px solid white;
+            width: 15vw;
+            font-size: 1rem;
+            color: $grey-text;
+        }
+        #newsfeed-btn-hottest {
+            float: right;
+            background-color: white;
+            height: 100%;
+            border: 1px solid white;
+            width: 15vw;
+            font-size: 1rem;
+            color: $grey-text;
+        }
+    }
+    .all-newsfeed-content {
+        overflow-y: scroll;
+        height: 85%;
+        width: 100%;
+        padding-top: 5%;
+        .single-newsfeed-content {
+            width: 100%;
+            //height: 100%;
+            margin-bottom: 5vh;
+            .post-img {
+                width: 95%;
+                margin-top: 2vh;
+                margin-left: 2.5%;
+            }
+            .post-video {
+                width: 95%;
+                margin-top: 2vh;
+                margin-left: 2.5%;
+            }
+            .channel-profile-content {
+                width: 100%;
+                img {
+                    width: 12%;
+                    float: left;
+                    margin-left: 2.5%;
+                    border-radius: 10em;
+                }
+                .channel-name {
+                    font-size: 0.8rem;
+                }
+                .create-time {
+                    font-size: 0.8rem;
+                    color: $grey-text;
+                }
+                .post-by-self {
+                    float: right;
+                    margin-right: 4vw;
+                    img {
+                        float: right;
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+                .dropdown-content {
+                    display: none;
+//                    position: absolute;
+                    background-color: #f9f9f9;
+                    width: 100%;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    button {
+                        color: black;
+                        height: 8vh;
+                        background-color: white;
+                        border: 1px solid white;
+                        width: 100%;
+                        line-height: 8vh;
+                        text-decoration: none;
+                        display: block;
+                    }
+                    .cancel {
+                        color: red;
+                    }
+                }
+            }
+            .text-content {
+                margin-left: 2.5%;
+                width: 95%;
+                //height: 100%;
+                font {
+                    font-size: 0.8rem;
+                }
+                .keep-reading {
+                    background-color: white;
+                    border: 1px solid white;
+                    color: $main-text;
+                }
+                hr {
+                    width: 95vw;
+                    color: $hr;
+                }
+                .client-button {
+                    //margin-top: 2vh; 
+                    height: 5vh;
+                    button {
+                        background-color: white;
+                        float: left;
+                        border: white 1px solid;
+                        width: 33.3%;
+                        img {
+                            height: 3vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
